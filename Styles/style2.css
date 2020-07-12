@@ -1,0 +1,138 @@
+#mainMenu {
+    text-align: center;
+}
+
+#mainMenu .floatingToolbox {
+    z-index: 10000 !important;
+}
+
+#mainMenu .overlay ul {
+    height: auto;
+}
+
+#menuButtonWrap {
+    text-align: center;
+    position: fixed;
+    width: 20%;
+    left: 40%;
+    z-index: 1;
+}
+
+.menuButton {
+    font-size: 32px;
+    color: white;
+    border: none;
+}
+
+#trigger-overlay {
+    position: initial;
+    margin-top: 50px;
+    background: transparent;
+}
+
+#close-menu {
+    position: fixed;
+    font-size: 30px;
+    top: 50px;
+    right: 50px;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#close-menu:hover {
+    opacity: 0.7;
+}
+
+#menuOverlaySection {
+    display: table;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgb(81,185,171), rgba(81,185,171,0.6), rgba(81,185,171,0.4));
+}
+
+.overlay-contentpush,
+.overlay-contentpush.close {
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: visibility 0s 0.5s;
+    transition: visibility 0s 0.5s;
+    -webkit-transition: opacity 2.0s ease-in;
+    -moz-transition: opacity 2.0s ease-in;
+    -o-transition: opacity 2.0s ease-in;
+    opacity: 0;
+}
+
+.overlay-contentpush.open {
+    visibility: visible;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transition: opacity 2.0s ease-in;
+    -moz-transition: opacity 2.0s ease-in;
+    -o-transition: opacity 2.0s ease-in;
+    opacity: 1;
+}
+
+#menuTitle {
+    font-size: 45px;
+    color: white;
+    width: 100%;
+    line-height: normal;
+}
+
+#menuItems {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#menuItems .menuItemLi {
+    width: 100%;
+    min-height: 35px;
+    text-align: center;
+}
+
+#menuItems .menuItemLi a {
+    color: white;
+    font-size: 24px;
+    transition: 0.3;
+    padding: 0;
+}
+
+#menuItems .menuItemLi a:hover {
+    background: transparent;
+    opacity: 0.7;
+}
+
+#menuItems .menuItemLi a:focus {
+    background: transparent;
+}
+
+#menuIcons {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#menuIcons .menuItemA {
+    color: white;
+    font-size: 22px;
+    display: inline;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#menuIcons .menuItemA:hover {
+    opacity: 0.7;
+    background: transparent;
+}
+
+@media only screen and (max-width : 767px) {
+
+    #close-menu {
+        right: 15px;
+    }
+}

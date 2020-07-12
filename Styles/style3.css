@@ -1,0 +1,175 @@
+#headerContent {
+    color: white;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+#headerInfo {
+    text-align: center;
+}
+
+#headerTitle {
+    font-size: 112px;
+    text-transform: uppercase;
+}
+
+#headerSubtitle {
+    font-size: 42px;
+    font-style: italic;
+}
+
+#iconContainer {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.headerIcons {
+    display: inline-block;
+    margin: 5%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.headerIcons:hover {
+    opacity: 0.5;
+}
+
+#firstLetter {
+    font-size: 32px;
+    border: 4px double rgb(81,185,171);
+    text-shadow: 1px 1px rgb(81,185,171);
+    display: inline;
+    margin: 0 auto;
+    padding: 6px 16px;
+    border-radius: 5px 20px 5px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+header .customTitle {
+    font-size: 35px;
+    display: block;
+}
+
+header .customParagraph {
+    font-size: 22px;
+    display: block;
+}
+
+header .customLink,
+header .customLink a {
+    color: white;
+    font-size: 22px;
+    display: block;
+    width: 100%;
+}
+
+header .customLink:hover {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+
+header .customIcon {
+    font-size: 40px;
+}
+
+header .customTitle,
+header .customParagraph,
+header .customLink,
+header .customIcon,
+header .customButton,
+header .customImage,
+header .customEmbed {
+    margin: 10px 0;
+}
+
+header #firstLetterWrap .customTitle,
+header #firstLetterWrap .customParagraph,
+header #firstLetterWrap .customLink,
+header #firstLetterWrap .customIcon,
+header #firstLetterWrap .customButton,
+header #firstLetterWrap .customImage,
+header #firstLetterWrap .customEmbed {
+    margin: 30px 0 0;
+}
+
+header #headerTitleWrap .customTitle,
+header #headerTitleWrap .customParagraph,
+header #headerTitleWrap .customLink,
+header #headerTitleWrap .customIcon,
+header #headerTitleWrap .customButton,
+header #headerTitleWrap .customImage,
+header #headerTitleWrap .customEmbed {
+    margin: 0;
+}
+
+header #headeSubtitleWrap .customTitle,
+header #headeSubtitleWrap .customParagraph,
+header #headeSubtitleWrap .customLink,
+header #headeSubtitleWrap .customIcon,
+header #headeSubtitleWrap .customButton,
+header #headeSubtitleWrap .customImage,
+header #headeSubtitleWrap .customEmbed,
+header #iconContainer .customTitle,
+header #iconContainer .customParagraph,
+header #iconContainer .customLink,
+header #iconContainer .customIcon,
+header #iconContainer .customButton,
+header #iconContainer .customImage,
+header #iconContainer .customEmbed {
+    margin: 10px 0 0;
+}
+
+@media only screen and (max-width : 800px) {
+    
+    #rightSide {
+        margin-right: 35px;
+    }
+    
+    #headerTitle {
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    #headerSubtitle {
+        font-size: 20px;
+    }
+
+    .headerIcons {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (max-width : 767px) {
+
+    #firstLetter {
+        display: inline-block;
+    }
+
+    header .customTitle {
+        font-size: 28px;
+    }
+
+    header .customParagraph {
+        font-size: 18px;
+    }
+
+    header .customLink,
+    header .customLink a {
+        font-size: 18px;
+    }
+
+    header #headeSubtitleWrap .customTitle,
+    header #headeSubtitleWrap .customParagraph,
+    header #headeSubtitleWrap .customLink,
+    header #headeSubtitleWrap .customIcon,
+    header #headeSubtitleWrap .customButton,
+    header #headeSubtitleWrap .customImage,
+    header #headeSubtitleWrap .customEmbed {
+        margin: 20px 0 0;
+    }
+
+    header #iconContainer .customImage {
+        padding: 0 30px;
+    }
+}

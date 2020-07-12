@@ -1,0 +1,173 @@
+#contact {
+    color: black;
+}
+
+#contact .contactImageBg {
+    color: white;
+}
+
+#contactContent {
+    word-wrap: break-word;
+}
+
+#contactTitleWrap {
+    margin-bottom: 40px;
+}
+
+#contactTitle {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+#contactMainRow,
+#contactInfoRow {
+    display: flex;
+}
+
+.contactInfoText {
+    font-size: 15px;
+    letter-spacing: .05em;
+}
+
+#contactAddress1,
+#contactAddress2,
+#contactEmailInner,
+#contactPhoneInner {
+    margin-bottom: 0;
+}
+
+#contactRowContainer {
+    margin-top: 30px;
+}
+
+.contactFormInput {
+    border: 1px solid black;
+}
+
+#contact .contactImageBg .contactFormInput {
+    border: 1px solid white;
+}
+
+.contactFormInput::placeholder {
+    color: black;
+    letter-spacing: .04em;
+}
+
+#contactButtons {
+    margin-top: 20px;
+}
+
+.contactButton {
+    color: black;
+    padding: 6px 42px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.contactButton:focus {
+    color: black;
+}
+
+#contact .contactImageBg .contactButton,
+#contact .contactImageBg .contactButton:focus {
+    color: white;
+    border: 1px solid white;
+}
+
+.contactButton:hover {
+    color: white;
+    border: 1px solid rgb(81,185,171);
+    background-color: rgb(81,185,171);
+    text-decoration: none;
+}
+
+#contact .contactImageBg .contactButton:hover {
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+}
+
+#contactMessage {
+    resize: none;
+}
+
+#contactMapWrap {
+    width: 100%;
+}
+
+#contactMap {
+    width: 100%;
+    height: 400px;
+}
+
+/* * * * * * * * */
+
+#contact .customTitle {
+    font-size: 40px;
+    display: block;
+}
+
+#contact .customParagraph {
+    font-size: 15px;
+    display: block;
+}
+
+#contact .customLink {
+    color: black;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+}
+
+#contact .contactImageBg .customLink  {
+    color: white;
+}
+
+#contact .customLink:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#contact .customIcon {
+    font-size: 30px;
+}
+
+#contact .customTitle,
+#contact .customParagraph,
+#contact .customLink,
+#contact .customIcon,
+#contact .customButton,
+#contact .customImage,
+#contact .customEmbed {
+    margin: 10px 0;
+}
+
+#contact #contactTitleWrap .customIcon,
+#contact #contactTitleWrap .customButton,
+#contact #contactTitleWrap .customImage {
+    margin: 0 0 10px;
+}
+
+@media only screen and (max-width : 767px) {
+
+    #contactTitle,
+    #contact .customTitle {
+        font-size: 32px;
+    }
+
+    #contactMainRow {
+        display: initial;
+    }
+
+    .contactInfoText {
+        letter-spacing: 0;
+    }
+
+    #contactMapWrap {
+        margin-top: 30px;
+    }
+}

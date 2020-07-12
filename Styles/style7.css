@@ -1,0 +1,286 @@
+#testimonial {
+    color: black;
+}
+
+#testimonial .testimonialImageBg {
+    color: white;
+}
+
+#testimonialContent {
+    word-wrap: break-word;
+    padding-bottom: 100px;
+}
+
+#testimonialTitleWrap {
+    margin-bottom: 15px;
+}
+
+#testimonialTitle {
+    font-size: 45px;
+    letter-spacing: .075em;
+    margin: 0;
+}
+
+#testimonialTitleHr {
+    border: 2px solid black;
+    width: 30%;
+    margin: 10px auto;
+}
+
+#testimonial .testimonialImageBg #testimonialTitleHr {
+    border-color: white;
+}
+
+#testimonialSubtitleWrap {
+    margin-bottom: 20px;
+}
+
+#testimonialSubtitle {
+    font-size: 25px;
+    letter-spacing: .075em;
+    font-style: italic;
+    margin: 0;
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+#quote-carousel .carousel-control {
+    background: none;
+    color: rgb(81,185,171);
+    font-size: 35px;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+#testimonial .testimonialImageBg #quote-carousel .carousel-control {
+    color: white;
+}
+
+#quote-carousel .carousel-control.left {
+    left: -12px;
+    top: 60px;
+}
+
+#quote-carousel .carousel-control.right {
+    right: -12px;
+    top: 60px;
+}
+
+#quote-carousel .carousel-indicators {
+    bottom: -60px;
+}
+
+#quote-carousel .carousel-indicators li {
+    background: rgba(81,185,171,0.3);
+    height: 14px;
+    width: 60px;
+    margin: 6px 6px 0;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: rgb(81,185,171);
+}
+
+#testimonial .testimonialImageBg #quote-carousel .carousel-indicators .active {
+    background: white;
+}
+
+.testimonialCarouselIcons {
+    cursor: pointer;
+}
+
+#quote-carousel img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    object-fit: cover;
+}
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.testimonialCard {
+    background-color: rgba(81,185,171,0.6);
+    border-radius: 20px;
+    color: white;
+}
+
+#testimonial .testimonialImageBg .testimonialCard {
+    background-color: rgb(81,185,171);
+    border: 2px solid white;
+}
+
+.testimonialCardBottom {
+    display: flex;
+    margin: 8px 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+blockquote p:before {
+    display: none;
+}
+
+.testimonialParagraph {
+    font-size: 17px;
+    letter-spacing: .02em;
+}
+
+.blockquoteSource {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 0;
+    display: block;
+}
+
+#testimonial .testimonialImageBg .blockquoteSource {
+    color: white;
+}
+
+/* * * * * * * * */
+
+#testimonial .customTitle {
+    font-size: 40px;
+    letter-spacing: .075em;
+    display: block;
+}
+
+#testimonial .testimonialCard .customTitle {
+    font-size: 24px;
+    letter-spacing: normal;
+}
+
+#testimonial .customParagraph {
+    font-size: 19px;
+    letter-spacing: .02em;
+    display: block;
+}
+
+#testimonial .testimonialCard .customParagraph {
+    font-size: 17px;
+}
+
+#testimonial .customLink {
+    color: black;
+    font-size: 19px;
+    display: block;
+    width: 100%;
+}
+
+#testimonial .testimonialCard .customLink {
+    font-size: 17px;
+}
+
+#testimonial .testimonialImageBg .customLink, 
+#testimonial .testimonialCard .customLink {
+    color: white;
+}
+
+#testimonial .customLink:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#testimonial .customIcon {
+    font-size: 32px;
+}
+
+#testimonial .customTitle,
+#testimonial .customParagraph,
+#testimonial .customLink,
+#testimonial .customIcon,
+#testimonial .customButton,
+#testimonial .customImage,
+#testimonial .customEmbed {
+    margin: 10px 0;
+}
+
+#testimonial #testimonialTitleWrap .customIcon,
+#testimonial #testimonialTitleWrap .customButton,
+#testimonial #testimonialTitleWrap .customImage {
+    margin: 10px 0 0;
+}
+
+#testimonial #testimonialTitleHrWrap .customIcon,
+#testimonial #testimonialTitleHrWrap .customButton,
+#testimonial #testimonialTitleHrWrap .customImage,
+#testimonial .testimonialImage .customTitle,
+#testimonial .testimonialImage .customParagraph,
+#testimonial .testimonialImage .customLink,
+#testimonial .testimonialImage .customIcon,
+#testimonial .testimonialImage .customButton,
+#testimonial .testimonialImage .customImage,
+#testimonial .testimonialImage .customEmbed {
+    margin: 5px 0 5px;
+}
+
+#testimonial .blockquoteSourceWrap .customTitle,
+#testimonial .blockquoteSourceWrap .customParagraph,
+#testimonial .blockquoteSourceWrap .customLink,
+#testimonial .blockquoteSourceWrap .customIcon,
+#testimonial .blockquoteSourceWrap .customButton,
+#testimonial .blockquoteSourceWrap .customImage,
+#testimonial .blockquoteSourceWrap .customEmbed {
+    margin: 5px 0 0;
+}
+
+#testimonial .testimonialParagraphWrap .customTitle,
+#testimonial .testimonialParagraphWrap .customParagraph,
+#testimonial .testimonialParagraphWrap .customLink,
+#testimonial .testimonialParagraphWrap .customIcon,
+#testimonial .testimonialParagraphWrap .customButton,
+#testimonial .testimonialParagraphWrap .customImage,
+#testimonial .testimonialParagraphWrap .customEmbed {
+    margin: 0;
+}
+
+@media (max-width: 1050px) {
+
+    #quote-carousel .carousel-control.left {
+        top: 40px;
+    }
+
+    #quote-carousel .carousel-control.right {
+        top: 40px;
+    }
+
+}
+
+@media (max-width: 767px) { 
+
+    #testimonialTitle {
+        font-size: 30px;
+    }
+    
+    #testimonialSubtitle {
+        font-size: 20px;
+    }
+    
+    .testimonialCardBottom {
+        display: initial;
+    }
+
+    #quote-carousel .carousel-indicators {
+        bottom: -70px;
+    }
+
+    #quote-carousel .carousel-indicators li {
+        margin: 6px 4px 0;
+    }
+
+    #quote-carousel .carousel-control.left {
+        top: 100px;
+    }
+
+    #quote-carousel .carousel-control.right {
+        top: 100px;
+    }
+}

@@ -1,0 +1,111 @@
+CREATE TABLE Login (
+  login_id 	varchar(20) PRIMARY KEY,
+  email 	varchar(40) unique not null,
+  password varchar(40) not null
+);
+
+CREATE TABLE Office (
+  office_id varchar(30) PRIMARY KEY,
+  office_phone number(10) unique not null,			
+  office_name varchar(40) not null,
+  office_address varchar(50)
+);
+
+CREATE TABLE Employee (
+  emp_id 	int(20) PRIMARY KEY,
+  email 	varchar(40) unique not null,
+  fname 	varchar(20) not null,
+  lname 	varchar(20),
+  office_id     varchar(30),
+  login_id 	varchar(20),
+  FOREIGN KEY (office_id) REFERENCES Office(office_id),
+  FOREIGN KEY (login_id) REFERENCES Login(login_id),
+  Password	varchar(40) not null,
+  profilepic varchar(255) NOT NULL
+);
+
+CREATE TABLE Emp_mobile(
+  emp_mobile1 	int(10),
+  emp_mobile2  	int(10),
+  emp_id int(20),
+  FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE Customer (
+  cus_id 	varchar(30) PRIMARY KEY,
+  customer_name 	varchar(50) not null,
+  customer_email 	varchar(50) unique not null,
+  emp_id int(20),
+  FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE Cus_mobile(
+  cus_mobile1 	int(10),
+  cus_mobile2  	int(10),
+  cus_id varchar(30),
+  FOREIGN KEY (cus_id) REFERENCES Customer(cus_id)
+);
+
+CREATE TABLE Payment (
+  payment_id int(30) PRIMARY KEY,
+  amount int(20) NOT NULL,
+  date_of_payment 	date,
+  cus_id varchar(30),
+  FOREIGN KEY (cus_id) REFERENCES Customer(cus_id)
+);
+
+CREATE TABLE Shipment (
+  ship_id 	varchar(20) PRIMARY KEY,
+  weight 	varchar(10),
+  date_of_shipment date,
+  to_city 	varchar(50) not null,
+  from_city varchar(50)  not null,
+  emp_id int(20),
+  FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE Comment_Ship (
+  comment_id int(30) PRIMARY KEY,
+  title 	varchar(50),
+  rating 	int(1) NOT NULL,
+  date_of_comment 	date,
+  comment_ship varchar(200),
+  ship_id 	varchar(20),
+  FOREIGN KEY (ship_id) REFERENCES Shipment(ship_id)
+);
+
+CREATE TABLE Courier (
+  courier_id int(30) PRIMARY KEY,
+  docket 	varchar(50),
+  courier_name 	varchar(50) NOT NULL,
+  cus_id varchar(30),
+  FOREIGN KEY (cus_id) REFERENCES Customer(cus_id),
+  ship_id 	varchar(20),
+  FOREIGN KEY (ship_id) REFERENCES Shipment(ship_id),
+  emp_id int(20),
+  FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+CREATE TABLE pays (
+  cus_id varchar(30),
+  FOREIGN KEY (cus_id) REFERENCES Customer(cus_id),
+  payment_id int(30) ,  
+  FOREIGN KEY (payment_id) REFERENCES Payment(payment_id),
+  courier_id int(30),
+  FOREIGN KEY (courier_id) references Courier(courier_id),
+  primary key(cus_id,payment_id,courier_id)
+);
+
+CREATE TABLE manages(
+  cus_id varchar(30),
+  FOREIGN KEY (cus_id) REFERENCES Customer(cus_id),
+  courier_id int(30),
+  FOREIGN KEY (courier_id) references Courier(courier_id),
+  office_id varchar(30),
+  FOREIGN KEY (office_id) REFERENCES Office(office_id),
+  emp_id int(20),
+  FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
+
+
+

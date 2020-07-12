@@ -1,0 +1,203 @@
+#gallery {
+    color: black;
+}
+
+#gallery .galleryImageBg {
+    color: white;
+}
+
+#galleryContent {
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#galleryTitle {
+    font-size: 50px;
+    margin: 10px 0 40px;
+}
+
+#categoryButtonOuter {
+    margin-bottom: 20px;
+}
+
+.categoryButtonContainer {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.categoryButton {
+    color: black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 32px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+#gallery .galleryImageBg .categoryButton {
+    color: white;
+    border-color: white;
+}
+
+.categoryButton:hover,
+.categoryButton:focus,
+.categoryButtonSelected {
+    color: black;
+    box-shadow: 0 0 20px rgb(81,185,171);
+    background-color: white;
+    text-decoration: none;
+}
+
+#gallery .galleryImageBg .categoryButtonSelected {
+    color: black;
+}
+
+.categoryFilter {
+    margin-top: 40px;
+}
+
+.galleryImages {
+    height: 350px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    object-fit: cover;
+    display: block;
+}
+
+.galleryImages:hover {
+    transform: scale(1.03);
+}
+
+#gallery .galleryImageBg .galleryImages {
+    border: 2px solid white;
+}
+
+.galleryText {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#gallery .galleryImageBg .galleryText {
+    color: white !important;
+}
+
+.galleryText:hover {
+    text-decoration: none;
+}
+
+#fancybox-content {
+    background: white;
+}
+
+#fancybox-title {
+    margin-left: 0 !important;
+    background: white;
+}
+
+#fancybox-title-over {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+#fancybox-close {
+    right: -35px;
+}
+
+#fancybox-right {
+    right: -20px;
+}
+
+#fancybox-bg-nw,
+#fancybox-bg-ne,
+#fancybox-bg-sw,
+#fancybox-bg-se {
+    display: none;
+}
+
+/* * * * * * * * * */
+
+#gallery .customTitle {
+    font-size: 40px;
+    display: block;
+}
+
+#gallery .customParagraph {
+    font-size: 18px;
+    display: block;
+}
+
+#gallery .customLink {
+    color: black;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+#gallery .galleryImageBg .customLink {
+    color: white;
+}
+
+#gallery .customLink:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#gallery .customIcon {
+    font-size: 32px;
+}
+
+#gallery .customTitle,
+#gallery .customParagraph,
+#gallery .customLink,
+#gallery .customIcon, 
+#gallery .customButton, 
+#gallery .customImage,
+#gallery .customEmbed {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width : 1050px) {
+
+    .galleryImages {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+
+    #galleryTop {
+        border-radius: 0;
+    }
+
+    .galleryImages {
+        height: 280px;
+    }
+}
+                    
+@media only screen and (max-width : 767px) {
+
+    #galleryTitle {
+        font-size: 40px;
+    }
+
+    .categoryButton {
+        margin-top: 10px;
+    }
+
+    .galleryImages {
+        height: 350px;
+    }
+
+    #gallery .customParagraph {
+        font-size: 14px;
+    }
+
+    #gallery .customLink {
+        font-size: 14px;
+    }
+}

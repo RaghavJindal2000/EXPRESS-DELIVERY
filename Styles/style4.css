@@ -1,0 +1,162 @@
+#about {
+    color: black;
+}
+
+#about .aboutImageBg {
+    color: white;
+}
+
+#aboutTitleWrap {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#aboutTitle {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#aboutRow {
+    display: flex;
+}
+
+#aboutImage1 {
+    text-align: right;
+}
+
+.aboutImages {
+    width: 100%;
+}
+
+#about .aboutImageBg .aboutImages {
+    border: 2px solid white;
+}
+
+#aboutBottom {
+    padding-left: 20px;
+}
+
+.aboutParagraph {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+#aboutParagraph1 {
+    margin-bottom: 20px;
+}
+
+#aboutButtons {
+    margin: 26px 0 64px;
+}
+
+#about .customTitle {
+    font-size: 35px;
+    display: block;
+}
+
+#about .customParagraph {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+#about .customLink {
+    color: black;
+    font-size: 20px;
+    width: 100%;
+}
+
+#about .aboutImageBg .customLink {
+    color: white;
+}
+
+#about .customLink:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#about .customIcon {
+    font-size: 36px;
+}
+
+#about .customTitle,
+#about .customParagraph,
+#about .customLink,
+#about .customIcon,
+#about .customButton,
+#about .customImage,
+#about .customEmbed {
+    margin: 10px 0;
+}
+
+#about #aboutImage1 .customTitle,
+#about #aboutImage1 .customParagraph,
+#about #aboutImage1 .customLink,
+#about #aboutImage1 .customIcon,
+#about #aboutImage1 .customButton,
+#about #aboutImage1 .customImage,
+#about #aboutImage1 .customEmbed {
+    margin: 20px 0 0;
+}
+
+#about #aboutParagraph1Wrap .customTitle,
+#about #aboutParagraph1Wrap .customParagraph,
+#about #aboutParagraph1Wrap .customLink,
+#about #aboutParagraph1Wrap .customIcon,
+#about #aboutParagraph1Wrap .customButton,
+#about #aboutParagraph1Wrap .customImage,
+#about #aboutParagraph1Wrap .customEmbed {
+    margin: 0 0 20px;
+}
+
+@media only screen and (max-width : 800px) {
+
+    #aboutTitle {
+        font-size: 30px;
+        margin-bottom: 0;
+    }  
+
+    #aboutBottom {
+        margin-top: 36px;
+    }
+
+    #about .customTitle {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    #aboutRow {
+        display: initial;
+    }
+
+    #aboutTitle {
+        font-size: 42px;
+        margin-bottom: 24px;
+    }
+
+    #aboutImage1 {
+        text-align: center;
+    }
+
+    #aboutBottom {
+        padding-left: 0;
+    }
+
+    #about #aboutTitleWrap .customTitle,
+    #about #aboutTitleWrap .customParagraph,
+    #about #aboutTitleWrap .customLink,
+    #about #aboutTitleWrap .customIcon,
+    #about #aboutTitleWrap .customButton,
+    #about #aboutTitleWrap .customImage,
+    #about #aboutTitleWrap .customEmbed {
+        margin: 0;
+    }
+
+    #about #aboutTitleWrap .customImage,
+    #about #aboutTitleWrap .customEmbed {
+        padding: 0 15px;
+    }
+}

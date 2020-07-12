@@ -1,0 +1,240 @@
+#features {
+    color: black;
+}
+
+#features .featuresImageBg {
+    color: white;
+}
+
+#featuresContent {
+    word-wrap: break-word;
+}
+
+#featuresTop {
+    text-align: center;
+}
+
+#featuresTitleWrap {
+    margin: 0 0 20px;
+}
+
+#featuresTitle {
+    font-size: 45px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+#featuresTitleHr {
+    border: 3px solid black;
+    width: 30%;
+}
+
+#features .featuresImageBg #featuresTitleHr {
+    border-color: white;
+}
+
+#featuresSubtitleWrap {
+    margin-bottom: 50px;
+}
+
+#featuresSubtitle {
+    font-size: 22px;
+    letter-spacing: 0.09em;
+}
+
+.features3 {
+    display: flex;
+}
+
+.featuresTemplate {
+    color: white;
+    background-color: rgba(81,185,171,0.4);
+    box-shadow: 1px 1px 1px black;
+    margin: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+#features .featuresImageBg .featuresTemplate {
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 1px 1px 1px white;
+}
+
+.featuresHeader {
+    font-size: 28px;
+} 
+
+.featuresHrWrap {
+    margin: 20px 0;
+}
+
+.featuresHr {
+    border: 2px dashed white;
+    width: 80%;
+    margin: 10px auto; 
+}
+
+#features .featuresImageBg .featuresHr {
+    border-color: rgb(81,185,171);
+}
+
+.featuresIcons {
+    margin-bottom: 15px;
+}
+
+.featuresIcon {
+    font-size: 60px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.featuresText {
+    font-size: 14px;
+}
+
+#features .customTitle {
+    font-size: 45px;
+    letter-spacing: 0.09em;
+    display: block;
+}
+
+#features #featuresRowContainer .customTitle {
+    font-size: 28px;
+    letter-spacing: normal;
+}
+
+#features .customParagraph {
+    font-size: 18px;
+    display: block;
+}
+
+#features #featuresRowContainer .customParagraph {
+    font-size: 14px;
+}
+
+#features .customLink {
+    color: black;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+#features #featuresRowContainer .customLink {
+    font-size: 14px;
+    color: white;
+}
+
+#features .customLink:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#features .customIcon {
+    font-size: 30px;
+}
+
+#features #featuresRowContainer .customIcon {
+    text-shadow: 1px 1px 2px black;
+}
+
+#features .customTitle,
+#features .customParagraph,
+#features .customLink,
+#features .customIcon, 
+#features .customButton,
+#features .customImage,
+#features .customEmbed {
+    margin: 10px 0;
+}
+
+#features #featuresTitleHrWrap .customTitle,
+#features #featuresTitleHrWrap .customParagraph,
+#features #featuresTitleHrWrap .customLink,
+#features #featuresTitleHrWrap .customIcon, 
+#features #featuresTitleHrWrap .customButton,
+#features #featuresTitleHrWrap .customImage,
+#features #featuresTitleHrWrap .customEmbed {
+    margin: 10px 0 15px;
+}
+
+#features #featuresSubtitleWrap .customTitle,
+#features #featuresSubtitleWrap .customParagraph,
+#features #featuresSubtitleWrap .customLink,
+#features #featuresSubtitleWrap .customIcon, 
+#features #featuresSubtitleWrap .customButton,
+#features #featuresSubtitleWrap .customImage,
+#features #featuresSubtitleWrap .customEmbed {
+    margin: 15px 0 0;
+}
+
+#features .featuresHeaderWrap .customTitle,
+#features .featuresHeaderWrap .customParagraph,
+#features .featuresHeaderWrap .customLink,
+#features .featuresHeaderWrap .customImage,
+#features .featuresHeaderWrap .customEmbed {
+    margin: 15px 0 10px;
+}
+
+#features .featuresHeaderWrap .customIcon, 
+#features .featuresHeaderWrap .customButton {
+    margin: 5px 0 0;
+}
+
+#features .featuresHrWrap .customTitle,
+#features .featuresHrWrap .customParagraph,
+#features .featuresHrWrap .customLink,
+#features .featuresHrWrap .customImage,
+#features .featuresHrWrap .customEmbed {
+    margin: 20px 0 10px;
+}
+
+#features .featuresHrWrap .customIcon, 
+#features .featuresHrWrap .customButton {
+    margin: 10px 0 0;
+}
+
+#features .featuresTextWrap .customTitle,
+#features .featuresTextWrap .customParagraph,
+#features .featuresTextWrap .customLink,
+#features .featuresTextWrap .customIcon, 
+#features .featuresTextWrap .customButton,
+#features .featuresTextWrap .customImage,
+#features .featuresTextWrap .customEmbed {
+    margin: 0 0 10px;
+}
+
+#features .featuresIcons .customTitle,
+#features .featuresIcons .customParagraph,
+#features .featuresIcons .customLink,
+#features .featuresIcons .customImage,
+#features .featuresIcons .customEmbed {
+    margin: 20px 0 10px;
+}
+
+#features .featuresIcons .customIcon, 
+#features .featuresIcons .customButton {
+    margin: 20px 0 0;
+}
+
+@media only screen and (max-width : 767px) {
+
+    #featuresTitle {
+        font-size: 35px;
+    }
+
+    .features3 {
+        display: initial;
+        margin: 0;
+    }
+
+    .featuresText {
+        font-size: 17px;
+    }
+
+    #features .customTitle {
+        font-size: 35px;
+    }
+
+    #features #featuresRowContainer .customParagraph {
+        font-size: 17px;
+    }
+}
